@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+overflow: auto;
+}
+
+.pad-change {
+ width: 50%;
+ float: left;
+ border: 1px solid black;
+ height: 60px;
+ line-height: 60px;
+ text-align: center;
+}
+.pads {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	gap: 5px;
+	justify-content: center;
+}
+
+.btn {
+	border: 1px solid black;
+	float: left;
+	margin: 5px;
+	border-radius: 10px;
+	box-shadow: 0px 8px #bbb;
+	width: 12vw;
+	height: 12vw;
+}
+
+.btn:focus {
+    box-shadow: 0 3px #999;
+    transform: translateY(5px);
+}
+
+
+#pad2 {
+	display: none;
+}
+
+#pad1 .btn {
+	background-color: hotpink;
+}
+#pad2 .btn {
+	background-color: aquamarine;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drumpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pad-change {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pad-change:hover {
+    background-color: #007B9A;
+}
+#pad1 {
+    display: grid;
+}
+
+#pad2 {
+    display: none;
+}	
